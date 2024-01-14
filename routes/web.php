@@ -23,3 +23,4 @@ Route::get('/write', function () {
     return view('writer', compact('title', 'content'));
 });
 Route::post('/write/generate', [ArticleGeneratorController::class, 'index']);
+
